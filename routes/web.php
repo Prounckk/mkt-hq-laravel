@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('records', 'NavigationController@index');
+Route::get('/', 'NavigationController@getDataFromDB')->name('layouts.nav');

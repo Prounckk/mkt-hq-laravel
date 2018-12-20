@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Routing\Route;
 use Illuminate\Support\Facades\DB;
 
 
@@ -14,7 +15,7 @@ class NavigationController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function getDataFromDB()
     {
         $records = DB::table('navigation')->get();
 
