@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Page Title')
-
+@extends('layouts.nav')
 @section('sidebar')
   @parent
 
